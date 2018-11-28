@@ -1,0 +1,10 @@
+{
+	"name":"hi-bye-4-languages",
+	"version":"0.0.1",
+	"dependencies":{
+		"markdown":"~0.4",
+		"ejs":"0.1",
+		"express":"2.2",
+		"jquery":"4.3"
+	}
+}
