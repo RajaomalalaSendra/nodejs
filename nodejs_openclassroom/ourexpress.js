@@ -29,9 +29,14 @@ app.get('/login/albert', (req, res) => {
 });
 
 // Des routes dynamiques en express js;
-app.get('classe/:etagenum/langue', (req, res) => {
+app.get('/classe/:numero/:langue', (req, res) => {
     res.setHeader('Content-Type', 'text/plain');
-    res.end('Here is the candidate number ' + req.params.etagenum) //" who learn the language: " + req.params.langue
+    res.end('Here is the candidate number ' + req.params.numero + " who learn the language: " + req.params.langue);
+});
+
+// creation de fonction de paramettre req et res qui renvoie le subject.ejs;
+app.get('/etage/:etagenum/chambre', (req, res) => {
+    res.render('subject.ejs', { etage:req.params.etagenum });
 });
 
 //générer des erreur 404 en express.js
