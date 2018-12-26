@@ -1,0 +1,12 @@
+
+{
+    "name":"my-todolist",
+    "version":"0.0.1",
+    "dependencies":{
+        "express":"~4.",
+        "ejs":"~2.6.1"
+    },
+    "author": "RajaomalalaSendra <rajaomanjato@email.com>",
+    "description": "Un gestionnaire de todolist ultra basique"
+
+}
